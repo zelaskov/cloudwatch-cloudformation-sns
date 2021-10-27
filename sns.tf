@@ -10,7 +10,7 @@ resource "aws_sns_topic_policy" "default" {
 resource "aws_sns_topic_subscription" "sns-mail-subscription" {
   topic_arn = aws_sns_topic.sns-topic.arn
   protocol  = "email"
-  endpoint  = "marcin.zelasko@codetain.com"
+  endpoint  = "marcin.zelasko@icloud.com"
 }
 
 data "aws_iam_policy_document" "sns-topic-policy" {
