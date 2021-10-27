@@ -1,6 +1,6 @@
 resource "aws_cloudwatch_event_rule" "event-rule" {
   name          = "cloudwatch-cloudformation-event"
-  description   = "Capture CFN events on uploads bucket"
+  description   = "Capture CFN DeleteStack event"
   event_pattern = <<PATTERN
 {
   "source": [
